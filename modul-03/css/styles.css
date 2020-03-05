@@ -1,0 +1,44 @@
+/* @import "imported.css"; */
+
+body{
+    margin: 12;
+    width: auto;
+}
+.menu{
+    color: green;
+    background-color: hotpink;
+   font-size: 45px;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.point{
+    font-weight: bold;
+}
+#box{
+    text-decoration: underline; color: red;
+}
+
+p{
+    color: red;
+}
+
+[type="text"]{
+    color: green;
+}
+[href="http://google.com"]{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.box{
+    height: 100px;
+    width: 600px;
+    background-color: gray;
+    padding: 30px 20px;
+    margin: 40px;
+    border: 5px solid black;
+}
