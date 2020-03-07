@@ -1,44 +1,29 @@
-/* @import "imported.css"; */
-
-body{
-    margin: 12;
-    width: auto;
+.box-wrap{
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    background-color: brown;
+    background-color:
 }
-.menu{
-    color: green;
-    background-color: hotpink;
-   font-size: 45px;
-}
-
-.active{
-    text-decoration: underline;
-}
-
-.point{
-    font-weight: bold;
-}
-#box{
-    text-decoration: underline; color: red;
-}
-
-p{
-    color: red;
-}
-
-[type="text"]{
-    color: green;
-}
-[href="http://google.com"]{
-    color: red;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 .box{
-    height: 100px;
-    width: 600px;
-    background-color: gray;
-    padding: 30px 20px;
-    margin: 40px;
-    border: 5px solid black;
+    display: inline-block;
+    background: rgba(256,256.256,.14);
+    background-image: linear-gradient(to bottom left,#333 45%,#fff 55%);
+    width: 400px;
+    min-height: 400px;
+
+}
+.box:nth-child(odd){
+    background-image: linear-gradient(to bottom right, #333 45%, #fff 55%);
+
+}
+p{
+    font-size: 21px;
+}
+p::before{
+    content: "\00ab";
+
+}
+p::after{
+    content: "\00bb";
 }
