@@ -99,5 +99,5 @@ button{
   color: #6c6c6c;
   display: block;
   margin: 58px auto;
-  text-align: center;
+  /* text-align: center; */
 }
