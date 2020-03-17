@@ -40,7 +40,7 @@ a:focus{
 .main-blocks{
   list-style: none;
   font-size: 0;
-    }
+  }
 
 .list-item{
   display: inline-block;
@@ -63,7 +63,7 @@ h2{
   font-size: 30px;
   color: #626262;
   line-height: 36px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 h2+p{
   font-family: 'Playfair Display', serif;
@@ -95,3 +95,6 @@ button{
   margin: auto;
   text-align: center;
 }
+button:hover{
+  color: #7810da;
+ }
