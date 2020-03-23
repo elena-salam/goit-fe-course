@@ -98,7 +98,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-button{
+.back, .forward{
     
     display: block;
     width: 104px;
@@ -106,7 +106,7 @@ button{
     background-color: #54a18f;
     border: 0px;
 }
-button:hover{
+.back:hover, .forward:hover{
     cursor: pointer;
 }
 .back{
