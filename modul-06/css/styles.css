@@ -31,30 +31,38 @@
 }
 .menu-link{
     display: block;
+    /* margin-bottom: 12px; */
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: #95e1d3; 
-    line-height: 30px; 
-    /* transition: color 0.2s linear;  */
+    line-height: 17px; 
+    text-transform: uppercase;
 }
 .menu-link::after{
-    display: none;
+    display: block;
     content: '';
-    margin-top: 12px;
-    width: 50px;
-    height: 3px;
-    background-color:#f38181;
-    
-    
+    /* margin-top: 12px;    */
+    width: 0%;
+    height: 3px;   
+    background-color: transparent;
+    transition-property: width;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
 }
 .menu-link:hover, .menu-link:focus{
     color: #f38181;
     cursor: pointer;    
 }
-.menu-link:hover .menu-link::after{
-    display: block;
+.menu-link:hover::after{  
+    width: 100%;  
+    background-color:#f38181;   
+    transition-property: width;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
 }
 
 
@@ -68,6 +76,7 @@
     justify-content: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
+    font-weight: 400;
     color: #333333;
 }
 h2{
@@ -84,17 +93,17 @@ h2::after{
     content: '';
     width: 60px;
     height: 3px;
-    color: #f38181;   
+    background-color: #f38181;
+    margin: auto; 
+    margin-top: 40px;
         
 }
-.icon{
-    position: absolute;
+.icon{    
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;      
-    left: 83px;
-    top: 0;
+    text-align: left;
 }
 .text{
     font-family: 'Roboto', sans-serif;
@@ -102,26 +111,25 @@ h2::after{
     font-size: 15px;
     line-height: 24px; 
 }
-.service-description{
-    position: absolute;
-    left: 83px;
-    top: 32px;       
-    
-}
+
 .services-list{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 10px;
+    justify-content: space-between;    
+    padding-left: 10px;
 
 }
 .servis-item{
+    box-sizing: border-box;
     width: 383px;
     margin-bottom: 100px;
     position: relative;
+    padding-left: 83px;
 }
 .servis-item::before{
+    position: absolute;
+    left: 0px;
     content: '';
     display: block;
     width: 83px;
@@ -187,48 +195,57 @@ img{
 h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    
+    margin-bottom: 12px;
+}
+.name{
     text-align: center;
-    margin-bottom: 12px; 
 }
 .occupation{
     text-align: center;
 }
 .team-member-card{
     position: relative;
+    transition-duration: 0.2s;
 }
 .background{
-    display: none;
     position: absolute;
     top: 0;
     width: 380px;
     height: 470px;    
-    background-image: linear-gradient(#ef8a8a, #edd687);
-    opacity: 0.8;
+   
+    background: linear-gradient(to bottom, rgba(237, 136, 137, 0.9), rgba(229, 209, 130, 0.9));
+    opacity: 0; 
+   
+
 }
-.team-member-card:hover .background{
-    display: block;
+.team-member-card:hover .background{   
     transform: translate(-10px, -10px);      
     transition-duration: 0.2s;
     transition-timing-function: linear;
-}
+    /* background: linear-gradient(#ef8a8a, #edd687); */
+    background: linear-gradient(to bottom, rgba(237, 136, 137, 0.9), rgba(229, 209, 130, 0.9));
+    opacity: 1;
+} 
 .social-item-btn{
     display: block;    
     width: 55px;
     height: 55px;
     background-color: #fce38a;
     background-position: center;
+    
 }
-
+.social-items-list li:not(:last-child){
+    margin-right: 2px;
+}
 .social-items-list{
     position: absolute;
     left: 84px;
     top: 207px;    
     display: flex;
-    justify-content: space-between;
-    width: 224px;
-    height: 55px;
+    justify-content: space-between;    
     list-style: none;
-   
+       
 }
 .facebook{
     background-image: url(../images/facebook.png);
