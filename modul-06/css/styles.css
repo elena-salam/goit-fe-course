@@ -1,17 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .wrapper{
     width: 1200px;
     margin: 0 auto;
 }
+
 .site-navigation{
     display: flex;   
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
+    padding-top: 28px;
+    padding-bottom: 110px;
     
 }
 .site-logo{
@@ -47,10 +51,12 @@
     width: 0%;
     height: 3px;   
     background-color: transparent;
+    /* background-color: #f38181; */
+    margin-top: 6px;
     transition-property: width;
     transition-duration: 200ms;
     transition-timing-function: linear;
-    transition-delay: 0.5s;
+    
 }
 .menu-link:hover, .menu-link:focus{
     color: #f38181;
@@ -62,7 +68,7 @@
     transition-property: width;
     transition-duration: 200ms;
     transition-timing-function: linear;
-    transition-delay: 0.5s;
+    /* transform: scaleX(1); */
 }
 
 
@@ -120,12 +126,16 @@ h2::after{
     padding-left: 10px;
 
 }
-.servis-item{
-    box-sizing: border-box;
-    width: 383px;
-    margin-bottom: 100px;
+.servis-item{    
+    width: 383px;    
     position: relative;
     padding-left: 83px;
+}
+.servis-item:nth-child(-n+3){
+    margin-bottom: 100px;
+}
+.services{
+    padding-bottom: 100px;
 }
 .servis-item::before{
     position: absolute;
@@ -170,11 +180,13 @@ h2::after{
     text-align: center;
     margin-bottom: 92px;
 }
+.our-team{
+    padding-bottom: 82px;
+}
 
 .team-list{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 82px;
+    justify-content: space-between;    
     list-style: none;
 }
 img{
@@ -227,7 +239,7 @@ h3{
     background: linear-gradient(to bottom, rgba(237, 136, 137, 0.9), rgba(229, 209, 130, 0.9));
     opacity: 1;
 } 
-.social-item-btn{
+.social-item-btn a{
     display: block;    
     width: 55px;
     height: 55px;
@@ -247,24 +259,24 @@ h3{
     list-style: none;
        
 }
-.facebook{
+.facebook a{
     background-image: url(../images/facebook.png);
     background-repeat: no-repeat;
 }
-.twitter{
+.twitter a{
     background-image: url(../images/twitter.png);
     background-repeat: no-repeat;
 }
-.pinterest{
+.pinterest a{
     background-image: url(../images/pinterest.png);
     background-repeat: no-repeat;
 }
-.insta{
+.insta a{
     background-image: url(../images/instagram.png);
     background-repeat: no-repeat;
 }
 
-.facebook:hover, .twitter:hover, .pinterest:hover, .insta:hover {
+.facebook a:hover, .twitter a:hover, .pinterest a:hover, .insta a:hover {
     background-color: #95e1d3;
 }
 
@@ -277,8 +289,7 @@ footer{
     align-items: center;
 }  
 
-.subscribtion{
-    box-sizing: border-box;
+.subscribtion{    
     width: 150px;
     height: 40px;
     border: none;
