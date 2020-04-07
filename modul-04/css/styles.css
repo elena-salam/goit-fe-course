@@ -171,6 +171,7 @@ img{
     margin-right: 30px;
 }
 .blog-item-announce{
+    margin: 0;
     display: block;
     font-size: 18px;
     line-height: 26px;
@@ -193,24 +194,22 @@ img{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
-button{
+.button{
+    display: block;
     width: 160px;
     height: 52px;
     background-color: #4ec6ab;
-    display: block;
     border-radius: 5px;
     font-size: 16px;
-    display: block;
+    line-height: 52px;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-   }
-button a{
-    display: block;
     text-decoration: none;
+    text-align: center;
     color: #ffffff;
-}
-button:hover{
+   }
+.button:hover{
     cursor: pointer;
 }  
     

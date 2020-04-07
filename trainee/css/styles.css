@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    /* border-collapse: collapse;
+     */
+}
+
+th, caption{
+    font-size: 30px;
+    font-weight: 500;
+    color: #292929;
+
+}
+.wrapper{
+    border: 2px solid #777777;
+    box-shadow: 2px;
+    width: 550px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    
+}
+div{
+    display: flex;
+    padding: auto;
+    justify-content: center;
+}
+
+tr, td, th{
+    padding: 5px;
+    border: 2px solid #777777;
+    font-weight: normal;
+    font-size: 18px;
+    border-collapse: collapse;
+    text-indent: 6px;
+}
+tr{
+    text-transform: uppercase;
+}
+td+td{
+    text-transform: lowercase;
+}
+th{
+    background-color: #777777;
+    color: #ffffff;
+}
+
+.school{
+    width: 500px;
+    background: green;
+}
+tr:nth-of-type(odd) {
+    background-color: hsla(0, 50%, 0, 0.1);
+}
+tr:nth-of-type(even) {
+    background-color: hsla(0, 30%, 0, 0.1);
+    border-collapse: collapse;
+}
+td[colspan="2"],
+td[rowspan="5"]
+{
+  background-color: hsla(0, 50%, 100%, 0.1);
+}
+td[colspan='2'],
+td [rowspan=5] {
+    background-color: hsla(0, 50%, 100%, 0.1);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 10px;
+}
