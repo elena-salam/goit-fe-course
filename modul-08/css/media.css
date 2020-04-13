@@ -1,0 +1,111 @@
+
+
+    
+
+@media(min-width:769px){
+    header{
+        height: 74px;
+    }
+    .site-logo{
+        top: 50px;
+        left: 50px;
+        transform: none;
+    }
+    .nav-items{
+        position: absolute;
+        right: 50px;
+        top: 18px;
+    }
+    .banner{
+        width: 100%;
+        max-width: 1440px;
+        height: auto;
+        min-height: 700px;
+        background-image: url(../images/Vector\ Smart\ Object.jpg);
+        background-position-x: center;
+        text-align: center;
+    }   
+    /* .photo2{
+        order: 3;
+    }
+     */
+     
+}
+@media(min-width:321px){
+    .banner{
+        width:100%;
+        max-width: 768px;
+        height: auto;
+        min-height: 700px;        
+        background-image: url(../images/Vector\ Smart\ Object-tab.jpg);
+        background-position-x: center;
+        text-align: center;    
+    }
+    .welcome{
+        width: 100%;
+        height: auto;        
+    }
+   
+}
+@media(min-width:768px) and (max-width:939px){
+    .banner{
+        width: 100%;
+        max-width: 1440px;
+        height: auto;
+        min-height: 700px;
+        background-image: url(../images/Vector\ Smart\ Object.jpg);
+        background-position-x: center;
+        text-align: center;
+    } 
+   
+    
+    .partners-list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;        
+        padding: 0 138px;
+            
+    }
+    .profile-item{
+        width: 236px;
+
+    }
+    .profile-item:nth-of-type(odd){
+        margin-right: 20px;
+    }
+    /* .profile-item{
+        margin: 0 10px;
+    } */
+    /* .profile-item:nth-last-child(-n+4){
+        margin-bottom: 58px;
+    } */
+    .profile-item{
+        margin-bottom: 58px;
+    }
+    
+}
+@media(min-width:940px){
+    
+    .partners-list{
+    display: flex;     
+    justify-content: space-between;
+    padding: 0 auto;
+    }
+    .profile-item{
+        width: 220px;
+    }
+    .profile-item:not(:last-child){
+        margin-right: 20px;
+    }
+    .banner{
+        width: 100%;
+        max-width: 1440px;
+        height: auto;
+        min-height: 700px;
+        background-image: url(../images/Vector\ Smart\ Object.jpg);
+        background-position-x: center;
+        text-align: center;
+    } 
+}
+
+

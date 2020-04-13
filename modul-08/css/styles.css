@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;   
+    src: url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2');
+    src: url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+         
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin-700.woff2') format('woff2');
+    src: url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+         
+  }
+header{
+    height: 56px;
+    padding: 0 50px;
+    margin-bottom: 172px;
+}
+.wrapper{
+
+}
+
+.site-logo{    
+    display: flex;
+    position: absolute;
+    top: 172px;
+    left: 50%;
+    transform: translateX(-50%);    
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    z-index: 1;
+    
+  
+}
+
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+    
+.enter{  
+    
+    list-style: none;       
+    width: 90px;
+    height: 36px;
+    text-align: center;
+    z-index: 1;
+    
+}
+.log, .sign{
+    display: block;
+    text-decoration: none;    
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 6px;
+    padding-bottom: 6px;
+   
+   
+
+}
+.log:focus,
+.sign:focus{
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+/* SECTION 1 */
+.welcome{
+    width: 100%;
+    height: auto;    
+}
+
+.searching-partners{
+    display: block;
+    text-align: center;
+    padding-bottom: 135px;   
+
+}
+.banner{
+    position: absolute;
+    top: 0;  
+    width: 320px;
+    height: auto;
+    min-height: 540px;
+    background-image: url(../images/Vector\ Smart\ Object-mobile.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;    
+
+}
+
+
+.searching-partners h2{
+    display: block;    
+    font-family: 'Montserrat';
+    font-size: 30px;
+    text-transform: uppercase;  
+    font-weight: 700;    
+    color: white;     
+    margin-bottom: 18px;
+  
+}
+
+.text-section1{
+    display: block;    
+    font-family: 'Rooboto';
+    font-size: 18px;
+    font-weight: 300;
+    color: white;   
+    text-transform: none;   
+    margin-bottom: 20px;   
+}
+.search-partner-link,
+.more-items{
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 78, 80);
+    font-weight: 700;
+    /* text-align: center; */
+    width: 280px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 78, 80); 
+   
+
+}
+
+.search-partner-link:hover,
+.search-partner-link:focus,
+.more-items:hover,
+.more-items:focus{
+    color: white;
+    background-color: rgb(255, 78, 80);
+    cursor: pointer;
+}
+
+/* SECTION 2 */
+.review-partners{
+    text-align: center;
+    margin-bottom: 40px;
+}
+h3{
+    padding-top: 67px;
+    padding-bottom: 18px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.partners-list{
+    
+    list-style: none;
+    padding: 0 50px;
+    margin-bottom: 28px;
+   
+}
+
+.profile-item:not(:last-child){
+    margin-bottom: 30px;
+}
+    
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 18px;
+ 
+}
+h4{
+    margin-bottom: 14px;
+}
+.profile-text{
+    font-family: 'Rooboto';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+    text-align: center;
+
+}
+.profile-item{
+    position: relative;
+    width: 220px;
+    margin: 0 auto;
+}
+.profile-item::after{
+    position: absolute;
+    right: 52px;
+    top: 85px;    
+    display: block;
+    content: ""; 
+    height: 40px;
+    width: 40px;    
+    background-repeat: no-repeat;
+    background-position: center;
+       
+}  
+.photo1::after{
+    background-image: url(../images/icons/icon1.png);
+    
+}
+
+.photo2::after{
+    background-image: url(../images/icons/icon2.png);
+}
+.photo3::after{
+    background-image: url(../images/icons/icon3.png);
+}
+.photo4::after{
+    background-image: url(../images/icons/icon4.png);
+}
