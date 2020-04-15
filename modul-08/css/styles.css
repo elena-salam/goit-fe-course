@@ -11,7 +11,7 @@
     src: url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2');
     src: url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
          
-  }
+}
   
   @font-face {
     font-family: 'Montserrat';
@@ -21,187 +21,164 @@
     src: url('../fonts/montserrat-v14-latin-700.woff') format('woff');
          
   }
-header{
-    height: 56px;
-    padding: 0 50px;
-    margin-bottom: 172px;
+
+.banner{
+    background-image: url(../images/Vector\ Smart\ Object-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+      
 }
-.wrapper{
-
+.container{
+    min-width: 320px;
+    max-width: 940px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
-.site-logo{    
-    display: flex;
-    position: absolute;
-    top: 172px;
-    left: 50%;
-    transform: translateX(-50%);    
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    z-index: 1;
-    
-  
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 540px;
+    color: #ffffff;
+    /* margin: 0 auto; */
+    text-align: center;
 }
-
-
 .nav-items{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    
+    margin-bottom: 118px;   
 }
-    
-.enter{  
-    
-    list-style: none;       
+.enter{
+    list-style: none;
     width: 90px;
     height: 36px;
-    text-align: center;
-    z-index: 1;
+    text-align: center;   
     
 }
-.log, .sign{
+.log, .sign, .site-logo{
     display: block;
-    text-decoration: none;    
-    color: white;
+    text-decoration: none;
+    color: #ffffff;
+}
+.site-logo{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700; 
+    letter-spacing: 50;
+    line-height: 36px;   
+}
+.log, .sign{
+    
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 700;
     padding-top: 6px;
     padding-bottom: 6px;
-   
-   
-
 }
 .log:focus,
-.sign:focus{
-    border-radius: 20px;
+.sign:focus,
+.log:hover,
+.sign:hover{
     border: 2px solid #ffffff;
+    border-radius: 20px;
 }
-
-/* SECTION 1 */
-.welcome{
-    width: 100%;
-    height: auto;    
-}
-
-.searching-partners{
-    display: block;
-    text-align: center;
-    padding-bottom: 135px;   
+.navigation{
+    margin-bottom: 38px;
 
 }
-.banner{
-    position: absolute;
-    top: 0;  
-    width: 320px;
-    height: auto;
-    min-height: 540px;
-    background-image: url(../images/Vector\ Smart\ Object-mobile.jpg);
-    background-repeat: no-repeat;
-    margin: 0 auto;    
-
-}
-
-
-.searching-partners h2{
-    display: block;    
+.holiday-dreams{
     font-family: 'Montserrat';
     font-size: 30px;
-    text-transform: uppercase;  
-    font-weight: 700;    
-    color: white;     
+    font-weight: 700;   
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
     margin-bottom: 18px;
-  
+    
 }
-
-.text-section1{
-    display: block;    
-    font-family: 'Rooboto';
+.find-partner{
+    font-family: 'Roboto';
     font-size: 18px;
     font-weight: 300;
-    color: white;   
-    text-transform: none;   
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
 }
-.search-partner-link,
-.more-items{
+.find-partner-link,
+.more-profiles-link{
     display: block;
     margin: 0 auto;
+    font-family: 'Montserrat';
     font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(255, 78, 80);
     font-weight: 700;
-    /* text-align: center; */
+    color: rgb(255, 78, 80);
     width: 280px;
     line-height: 40px;
     border-radius: 20px;
-    border: 2px solid rgb(255, 78, 80); 
-   
-
+    border: 2px solid rgb(255, 78, 80);
 }
-
-.search-partner-link:hover,
-.search-partner-link:focus,
-.more-items:hover,
-.more-items:focus{
-    color: white;
+.find-partner-link:hover,
+.find-partner-link:focus,
+.more-profiles-link:hover,
+.more-profiles-link:focus{
+    color: #ffffff;
     background-color: rgb(255, 78, 80);
     cursor: pointer;
 }
 
-/* SECTION 2 */
-.review-partners{
-    text-align: center;
-    margin-bottom: 40px;
+/* *****SECTION****** */
+.container{
+    min-width: 320px;
+    max-width: 940px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-h3{
-    padding-top: 67px;
-    padding-bottom: 18px;
-    font-family: "Montserrat";
-    color: rgb(51, 51, 51);
+.section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+    text-align: center;
+}
+.meet-partner{
+    font-family: 'Montserrat';
+    padding-top: 48px;    
+    font-family: serif;
     font-size: 22px;
-    line-height: 27px;
-    font-weight: 700;
-    text-align: center;
-
-}
+    line-height: 27px;    
+    color: rgb(51, 51, 51);    
+    width: 264px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    
+} 
 .partners-list{
-    
     list-style: none;
-    padding: 0 50px;
     margin-bottom: 28px;
-   
+
 }
-
-.profile-item:not(:last-child){
-    margin-bottom: 30px;
-}
-    
-
-
 img{
     display: block;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
     margin-bottom: 18px;
- 
 }
-h4{
+.partner-name{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: rgb(51, 51, 51);
     margin-bottom: 14px;
 }
+
 .profile-text{
-    font-family: 'Rooboto';
+    font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.2;
     font-weight: 300;
     color: rgb(102, 102, 102);
     text-align: center;
-
+}
+.profile-item:not(:last-child){
+    margin-bottom: 30px;
 }
 .profile-item{
     position: relative;
@@ -211,26 +188,23 @@ h4{
 .profile-item::after{
     position: absolute;
     right: 52px;
-    top: 85px;    
+    top: 85px;
     display: block;
-    content: ""; 
+    content: '';
     height: 40px;
-    width: 40px;    
+    width: 40px;
     background-repeat: no-repeat;
     background-position: center;
-       
-}  
+}
 .photo1::after{
     background-image: url(../images/icons/icon1.png);
-    
 }
-
 .photo2::after{
     background-image: url(../images/icons/icon2.png);
 }
-.photo3::after{
+photo3::after{
     background-image: url(../images/icons/icon3.png);
 }
-.photo4::after{
+photo4::after{
     background-image: url(../images/icons/icon4.png);
 }

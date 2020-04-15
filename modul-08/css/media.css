@@ -1,111 +1,85 @@
-
-
-    
-
-@media(min-width:769px){
-    header{
-        height: 74px;
-    }
-    .site-logo{
-        top: 50px;
-        left: 50px;
-        transform: none;
-    }
-    .nav-items{
-        position: absolute;
-        right: 50px;
-        top: 18px;
-    }
+@media(min-width:321px) and (max-width:747px){
     .banner{
-        width: 100%;
-        max-width: 1440px;
-        height: auto;
-        min-height: 700px;
-        background-image: url(../images/Vector\ Smart\ Object.jpg);
-        background-position-x: center;
-        text-align: center;
-    }   
-    /* .photo2{
-        order: 3;
-    }
-     */
-     
-}
-@media(min-width:321px){
-    .banner{
-        width:100%;
-        max-width: 768px;
-        height: auto;
-        min-height: 700px;        
         background-image: url(../images/Vector\ Smart\ Object-tab.jpg);
-        background-position-x: center;
-        text-align: center;    
+        
     }
-    .welcome{
-        width: 100%;
-        height: auto;        
-    }
-   
-}
-@media(min-width:768px) and (max-width:939px){
-    .banner{
-        width: 100%;
-        max-width: 1440px;
-        height: auto;
-        min-height: 700px;
-        background-image: url(../images/Vector\ Smart\ Object.jpg);
-        background-position-x: center;
-        text-align: center;
-    } 
-   
     
+}
+
+    
+@media(min-width:768px){
+    .banner{
+        background-image: url(../images/Vector\ Smart\ Object.jpg);
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 16px;
+        margin-bottom: 150px;
+    }
+    .nav-items, .site-logo{
+        margin-bottom: 0;
+    }
+    .holiday-dreams{
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+    .find-partner{
+        margin-bottom: 30px;
+    }
+    .meet-partner{
+        width: auto;
+        margin-bottom: 35px;
+    }
     .partners-list{
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;        
-        padding: 0 138px;
-            
+        flex-wrap: wrap;
+        justify-content: space-between;        
+        margin: 0 auto;
     }
-    .profile-item{
-        width: 236px;
-
+    li + .photo2{
+        order: 3;
     }
-    .profile-item:nth-of-type(odd){
-        margin-right: 20px;
+    li + .photo3{
+        order: 2;
     }
-    /* .profile-item{
-        margin: 0 10px;
-    } */
-    /* .profile-item:nth-last-child(-n+4){
-        margin-bottom: 58px;
-    } */
-    .profile-item{
-        margin-bottom: 58px;
-    }
-    
+    li + .photo4{
+        order: 4;
+    }    
 }
-@media(min-width:940px){
-    
-    .partners-list{
-    display: flex;     
-    justify-content: space-between;
-    padding: 0 auto;
-    }
-    .profile-item{
-        width: 220px;
-    }
-    .profile-item:not(:last-child){
-        margin-right: 20px;
-    }
-    .banner{
-        width: 100%;
-        max-width: 1440px;
-        height: auto;
+@media(min-width:321px){
+    .header{
         min-height: 700px;
-        background-image: url(../images/Vector\ Smart\ Object.jpg);
-        background-position-x: center;
-        text-align: center;
-    } 
+    }
 }
 
+@media(min-width:940px){
+    .navigation{
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+    .partners-list{        
+        width: 940px;        
+    }
+    .section{
+        padding-bottom: 73px;
+    }
+}
 
+@media(min-width:768px) and (max-width:939px){
+    .partners-list{        
+        width: 492px;        
+    }
+    .photo2{
+        order: 3;
+    }
+    .photo3{
+        order: 2;
+    }
+    .photo4{
+        order: 4;
+    }
+}
