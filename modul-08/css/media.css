@@ -1,4 +1,10 @@
-@media(min-width:321px) and (max-width:747px){
+@media(min-width:321px){
+    .header{
+        min-height: 700px;
+    }
+}
+
+@media(min-width:321px) and (max-width:767px){
     .banner{
         background-image: url(../images/Vector\ Smart\ Object-tab.jpg);
         
@@ -8,6 +14,9 @@
 
     
 @media(min-width:768px){
+    .container{
+        width: 748px;
+    }
     .banner{
         background-image: url(../images/Vector\ Smart\ Object.jpg);
     }
@@ -39,6 +48,7 @@
         flex-wrap: wrap;
         justify-content: space-between;        
         margin: 0 auto;
+       
     }
     li + .photo2{
         order: 3;
@@ -50,19 +60,19 @@
         order: 4;
     }    
 }
-@media(min-width:321px){
-    .header{
-        min-height: 700px;
-    }
-}
+
 
 @media(min-width:940px){
+    .container{
+        width: 920px;
+    }
     .navigation{
         padding-left: 0px;
-        padding-right: 20px;
+        padding-right: 0px;
     }
     .partners-list{        
-        width: 940px;        
+        width: 920px;
+        margin: 0 auto;       
     }
     .section{
         padding-bottom: 73px;

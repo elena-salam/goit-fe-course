@@ -29,7 +29,7 @@
       
 }
 .container{
-    min-width: 320px;
+    min-width: 300px;
     max-width: 940px;
     margin: auto;
     padding-left: 10px;
@@ -126,7 +126,7 @@
 
 /* *****SECTION****** */
 .container{
-    min-width: 320px;
+    min-width: 300px;
     max-width: 940px;
     margin: auto;
     padding-left: 10px;
@@ -153,6 +153,7 @@
 .partners-list{
     list-style: none;
     margin-bottom: 28px;
+    margin: 0 auto;
 
 }
 img{
@@ -202,9 +203,10 @@ img{
 .photo2::after{
     background-image: url(../images/icons/icon2.png);
 }
-photo3::after{
+.photo3::after{
+
     background-image: url(../images/icons/icon3.png);
 }
-photo4::after{
+.photo4::after{
     background-image: url(../images/icons/icon4.png);
 }
