@@ -1,0 +1,221 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;   
+    src: url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2');
+    src: url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+         
+}
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin-700.woff2') format('woff2');
+    src: url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+         
+  }
+
+header{
+    min-width: 320px;
+    max-width: 940px;
+    min-height: 540px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url(../images/Vector\ Smart\ Object-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}  
+
+/* .container{
+    padding: 0 -15px;
+  } */
+
+  
+.row{
+    text-align: center;
+}
+.main-nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    width: 180px;    
+    text-align: center;
+    margin-bottom: 108px;  
+}
+
+.log, .sign, .site-logo{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+.site-logo{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700; 
+    letter-spacing: 50;
+    line-height: 36px;
+    padding-top: 20px;
+}
+.log, .sign{
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 90px;
+    height: 36px;
+    text-align: center;  
+}
+.log:focus,
+.sign:focus,
+.log:hover,
+.sign:hover{
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+.holiday-dreams{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 700;   
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+    
+}
+.title{
+    color: white;
+}
+.find-partner{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.find-partner-link,
+.more-profiles-link{
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 78, 80);
+    width: 280px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 78, 80);
+}
+.find-partner-link:hover,
+.find-partner-link:focus,
+.more-profiles-link:hover,
+.more-profiles-link:focus{
+    color: #ffffff;
+    background-color: rgb(255, 78, 80);
+    cursor: pointer;
+}
+
+
+/* ******MAIN******* */
+
+.meet-partner{
+    font-family: 'Montserrat';
+    padding-top: 48px;    
+    font-family: serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;    
+    color: rgb(51, 51, 51);    
+    /* width: 264px; */
+    margin: 0 auto;
+    margin-bottom: 18px;
+    
+} 
+.partners-list{
+    list-style: none;
+    margin-bottom: 28px;
+    margin: 0 auto;
+
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+.partner-name{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    margin-bottom: 14px;
+}
+
+.profile-text{
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+    text-align: center;
+}
+.profile-item:not(:last-child){
+    margin-bottom: 30px;
+}
+.profile-item{
+    position: relative;
+    width: 220px;
+    margin: 0 auto;
+}
+.profile-item::after{
+    position: absolute;
+    right: 52px;
+    top: 85px;
+    display: block;
+    content: '';
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.photo1::after{
+    background-image: url(../images/icons/icon1.png);
+}
+.photo2::after{
+    background-image: url(../images/icons/icon2.png);
+}
+.photo3::after{
+
+    background-image: url(../images/icons/icon3.png);
+}
+.photo4::after{
+    background-image: url(../images/icons/icon4.png);
+}
+.review-partners{
+    padding-bottom: 55px;
+}
+
+
+
+@media(min-width:321px) and (max-width:767px){
+    .banner{
+        background-image: url(../images/Vector\ Smart\ Object-tab.jpg);
+        
+    }
+    
+}
+@media(min-width:768px){
+    .banner{
+        background-image: url(../images/Vector\ Smart\ Object.jpg);
+    }
+}     
+
+
+
+
