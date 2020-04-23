@@ -18,21 +18,18 @@
   }
 
 header{
-    min-width: 320px;
+    /* min-width: 320px; */
     max-width: 940px;
     min-height: 540px;
-    margin: 0 auto;
+    /* margin: 0 auto;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; */
     background-image: url(../images/Vector\ Smart\ Object-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
    
 }  
 
-/* .container{
-    padding: 0 -15px;
-  } */
 
   
 .row{
@@ -61,6 +58,11 @@ header{
     line-height: 36px;
     padding-top: 20px;
 }
+.site-logo:hover,
+.site-logo:focus{
+    text-decoration: none;
+    color: white;
+}
 .log, .sign{
     display: block;
     font-family: 'Montserrat';
@@ -78,6 +80,8 @@ header{
 .sign:hover{
     border: 2px solid #ffffff;
     border-radius: 20px;
+    text-decoration: none;
+    color: white;
 }
 .holiday-dreams{
     font-family: 'Montserrat';
@@ -110,6 +114,8 @@ header{
     line-height: 40px;
     border-radius: 20px;
     border: 2px solid rgb(255, 78, 80);
+    text-decoration: none;
+    
 }
 .find-partner-link:hover,
 .find-partner-link:focus,
@@ -118,10 +124,13 @@ header{
     color: #ffffff;
     background-color: rgb(255, 78, 80);
     cursor: pointer;
+    text-decoration: none;
+    
 }
 
 
 /* ******MAIN******* */
+
 
 .meet-partner{
     font-family: 'Montserrat';
@@ -139,7 +148,9 @@ header{
 .partners-list{
     list-style: none;
     margin-bottom: 28px;
-    margin: 0 auto;
+    margin: 0;
+   padding-left: 0;
+   padding-right: 0;
 
 }
 img{
@@ -199,6 +210,9 @@ img{
 }
 .review-partners{
     padding-bottom: 55px;
+}
+.more-profiles-link{
+    margin-top: 36px;
 }
 
 
