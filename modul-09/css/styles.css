@@ -225,7 +225,7 @@ img{
     }
     
 }
-@media(min-width:768px) and (max-width:1200px){
+@media(min-width:768px){
     .banner{
         background-image: url(../images/Vector\ Smart\ Object.jpg);
         min-height: 700px;
