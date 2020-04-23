@@ -19,7 +19,7 @@
 
 header{
     /* min-width: 320px; */
-    max-width: 940px;
+    max-width: 100%;
     min-height: 540px;
     /* margin: 0 auto;
     padding-left: 15px;
@@ -220,13 +220,15 @@ img{
 @media(min-width:321px) and (max-width:767px){
     .banner{
         background-image: url(../images/Vector\ Smart\ Object-tab.jpg);
+        min-height: 700px;
         
     }
     
 }
-@media(min-width:768px){
+@media(min-width:768px) and (max-width:1200px){
     .banner{
         background-image: url(../images/Vector\ Smart\ Object.jpg);
+        min-height: 700px;
     }
 }     
 
